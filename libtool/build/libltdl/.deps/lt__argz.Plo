@@ -1,0 +1,146 @@
+libltdl/lt__argz.lo: ../libltdl/lt__argz.c config.h \
+  libltdl/libltdl/lt__argz.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/local/include/stdlib.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/alloca.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/cdefs.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/versioning.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/api-level.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/get_device_api_level_inlines.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/ndk-version.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wait.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/wait.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/malloc.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stddef.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/__stddef_max_align_t.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stdint.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdint.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wchar_limits.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/int-ll64.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/bitsperlong.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/posix_types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stddef.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler_types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/posix_types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/pthread_types.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stdarg.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/seek_constants.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/xlocale.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_stdlib_inlines.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/errno.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/errno.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/errno.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno-base.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_errno_inlines.h \
+  ../libltdl/libltdl/lt__glibc.h ../libltdl/libltdl/slist.h \
+  ../libltdl/libltdl/lt_system.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/assert.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/string.h \
+  /root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/strcasecmp.h
+
+config.h:
+
+libltdl/libltdl/lt__argz.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/local/include/stdlib.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/alloca.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/cdefs.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/versioning.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/api-level.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/get_device_api_level_inlines.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/ndk-version.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wait.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/wait.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/malloc.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stddef.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/__stddef_max_align_t.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stdint.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdint.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wchar_limits.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/int-ll64.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/posix_types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stddef.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler_types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/posix_types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/posix_types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/pthread_types.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.9/include/stdarg.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/seek_constants.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/xlocale.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_stdlib_inlines.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/errno.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/errno.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/errno.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno-base.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_errno_inlines.h:
+
+../libltdl/libltdl/lt__glibc.h:
+
+../libltdl/libltdl/slist.h:
+
+../libltdl/libltdl/lt_system.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/assert.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/string.h:
+
+/root/tools/ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/strcasecmp.h:

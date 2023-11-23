@@ -1,0 +1,11 @@
+/output
+/root-armhf
+/root-arm64
+/pulseaudio-module/build
+/pulseaudio-module/build64
+/libsndfile/build-armhf
+/libsndfile/build-arm64
+/libtool/build-armhf
+/libtool/build-arm64
+/pulseaudio/build-armhf
+/pulseaudio/build-arm64
