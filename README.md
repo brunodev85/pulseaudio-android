@@ -1,0 +1,1 @@
+Modified version of pulseaudio. The original repository lives at https://gitlab.freedesktop.org/pulseaudio/pulseaudio.
