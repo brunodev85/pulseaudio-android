@@ -1,1 +1,1 @@
-Modified version of pulseaudio. The original repository lives at https://gitlab.freedesktop.org/pulseaudio/pulseaudio.
+PulseAudio module for Android. The PulseAudio repository lives at https://gitlab.freedesktop.org/pulseaudio/pulseaudio.
