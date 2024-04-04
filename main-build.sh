@@ -14,7 +14,7 @@ export ROOT_DIR="$BASE_DIR/root-$arch"
 export PATH=$ROOT_DIR/bin:$PATH
 export PKG_CONFIG_PATH=$ROOT_DIR/lib/pkgconfig
 export ACLOCAL_PATH=$ROOT_DIR/share/aclocal
-export CFLAGS="-I$ROOT_DIR/include"
+export CFLAGS="-O2 -I$ROOT_DIR/include"
 
 export ALLOW_UNRESOLVED_SYMBOLS=1
 export ac_cv_func_mkfifo=no
@@ -68,7 +68,7 @@ mkdir -p pulseaudio/build-$arch
 pushd pulseaudio/build-$arch
 ../configure --host=$BUILDCHAIN --prefix=$ROOT_DIR --disable-static --enable-shared --disable-rpath --disable-nls --disable-x11 --disable-oss-wrapper --disable-alsa --disable-esound --disable-waveout --disable-glib2 --disable-gtk3 --disable-gconf --disable-avahi --disable-jack --disable-asyncns --disable-tcpwrap --disable-lirc --disable-dbus --disable-bluez5 --disable-udev --disable-openssl --disable-manpages --disable-samplerate --without-speex --with-database=simple --disable-orc --without-caps --without-fftw --disable-systemd-daemon --disable-systemd-login --disable-systemd-journal --disable-webrtc-aec --disable-tests --disable-neon-opt --disable-gsettings
 
-make LDFLAGS="-pie"
+make
 make install
 
 rm -r $OUTPUT_DIR
