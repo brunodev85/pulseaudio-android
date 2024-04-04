@@ -3,6 +3,7 @@
 /root-arm64
 /pulseaudio-module/build
 /pulseaudio-module/build64
+/pulseaudio-module/pulseaudio.tzst
 /libsndfile/build-armhf
 /libsndfile/build-arm64
 /libtool/build-armhf
