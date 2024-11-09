@@ -40,6 +40,8 @@ PA_MODULE_USAGE(
     "sink_name=<name for the sink> "
     "sink_properties=<properties for the sink> "
     "rate=<sampling rate> "
+    "volume=<output volume>"
+    "performance_mode=<performance mode: 0 (NONE), 1 (Low Latency), 2 (Power Saving)>"
 );
 
 #define DEFAULT_SINK_NAME "AAudioSink"
@@ -65,12 +67,17 @@ struct userdata {
     AAudioStreamBuilder *builder;
     AAudioStream *stream;
 	pa_sample_spec ss;
+    
+    float volume;
+    int performance_mode;
 };
 
 static const char* const valid_modargs[] = {
     "sink_name",
     "sink_properties",
     "rate",
+    "volume",
+    "performance_mode",
     NULL
 };
 
@@ -88,7 +95,7 @@ static int pa_create_aaudio_stream(struct userdata *u) {
 		return -1;
 	}
 	
-    AAudioStreamBuilder_setPerformanceMode(u->builder, AAUDIO_PERFORMANCE_MODE_LOW_LATENCY);
+    AAudioStreamBuilder_setPerformanceMode(u->builder, u->performance_mode);
 	AAudioStreamBuilder_setDataCallback(u->builder, aaudio_data_callback, u);	
     AAudioStreamBuilder_setFormat(u->builder, u->ss.format == PA_SAMPLE_FLOAT32LE ? AAUDIO_FORMAT_PCM_FLOAT : AAUDIO_FORMAT_PCM_I16);
     AAudioStreamBuilder_setSampleRate(u->builder, u->ss.rate);
@@ -221,6 +228,27 @@ int pa__init(pa_module* m) {
 	
 	u->ss.channels = 2;
     u->ss.format = u->ss.format == PA_SAMPLE_FLOAT32LE || u->ss.format == PA_SAMPLE_FLOAT32BE ? PA_SAMPLE_FLOAT32LE : PA_SAMPLE_S16LE;
+    
+    u->volume = 1.0;
+    u->performance_mode = AAUDIO_PERFORMANCE_MODE_LOW_LATENCY;
+    
+    double volume = 0.0;
+    if (!pa_modargs_get_value_double(ma, "volume", &volume)) u->volume = volume;
+    
+    int performance_mode = 0;
+    if (!pa_modargs_get_value_s32(ma, "performance_mode", &performance_mode)) {
+        switch (performance_mode) {
+            case 0:
+                u->performance_mode = AAUDIO_PERFORMANCE_MODE_NONE;
+                break;
+            case 1:
+                u->performance_mode = AAUDIO_PERFORMANCE_MODE_LOW_LATENCY;
+                break;
+            case 2:
+                u->performance_mode = AAUDIO_PERFORMANCE_MODE_POWER_SAVING;
+                break;                
+        }
+    }
 	
     if (pa_create_aaudio_stream(u) < 0) goto error;
 	
@@ -232,6 +260,16 @@ int pa__init(pa_module* m) {
     pa_sink_new_data_set_sample_spec(&data, &u->ss);
     pa_sink_new_data_set_alternate_sample_rate(&data, u->ss.rate);
     pa_sink_new_data_set_channel_map(&data, &map);
+    
+    if (u->volume != 1.0) {
+        pa_cvolume cvol;
+        cvol.channels = 2;
+        cvol.values[0] = u->volume * PA_VOLUME_NORM;
+        cvol.values[1] = u->volume * PA_VOLUME_NORM;
+        
+        pa_sink_new_data_set_volume(&data, &cvol);
+    }
+    
     pa_proplist_sets(data.proplist, PA_PROP_DEVICE_DESCRIPTION, _("AAudio Output"));
     pa_proplist_sets(data.proplist, PA_PROP_DEVICE_CLASS, "abstract");
 	
@@ -239,7 +277,7 @@ int pa__init(pa_module* m) {
         pa_log("pa_modargs_get_proplist() failed.");
         pa_sink_new_data_done(&data);
         goto error;
-    }	
+    }
 	
     u->sink = pa_sink_new(m->core, &data, 0);
     pa_sink_new_data_done(&data);
